@@ -1,0 +1,50 @@
+---
+title: MRI 缩写指南
+---
+
+import { LinkTable } from '../../../../components/ui/LinkTable'
+
+# MRI 缩写指南
+
+本指南提供了常见 MRI 相关缩写的全面列表及其含义。
+
+<LinkTable
+  columns={[
+    { header: '缩写', accessor: 'acronym' },
+    { header: '全称', accessor: 'fullName' },
+    { header: '描述', accessor: 'description' },
+    { header: '参考', accessor: 'reference', isLink: true, linkPrefix: '/docs/references/' }
+  ]}
+  data={[
+    {
+      acronym: 'MRI',
+      fullName: '磁共振成像',
+      description: '一种用于形成人体解剖结构和生理过程图像的医学成像技术',
+      reference: 'mri-basics'
+    },
+    {
+      acronym: 'T1',
+      fullName: 'T1加权',
+      description: '一种突出显示脂肪并显示良好解剖细节的 MRI 序列',
+      reference: 't1-imaging'
+    },
+    {
+      acronym: 'T2',
+      fullName: 'T2加权',
+      description: '一种突出显示水分并有助于检测病理的 MRI 序列',
+      reference: 't2-imaging'
+    },
+    {
+      acronym: 'FLAIR',
+      fullName: '液体衰减反转恢复',
+      description: '一种特殊的 MRI 序列，可抑制液体信号同时保持其他组织的信号',
+      reference: 'flair-imaging'
+    },
+    {
+      acronym: 'DWI',
+      fullName: '弥散加权成像',
+      description: '一种测量组织中水分子随机运动的 MRI 序列',
+      reference: 'dwi-imaging'
+    }
+  ]}
+/> 

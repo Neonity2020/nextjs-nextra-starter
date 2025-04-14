@@ -1,0 +1,50 @@
+---
+title: MRI Acronym Guide
+---
+
+import { LinkTable } from '../../../../components/ui/LinkTable'
+
+# MRI Acronym Guide
+
+This guide provides a comprehensive list of common MRI-related acronyms and their meanings.
+
+<LinkTable
+  columns={[
+    { header: 'Acronym', accessor: 'acronym' },
+    { header: 'Full Name', accessor: 'fullName' },
+    { header: 'Description', accessor: 'description' },
+    { header: 'Reference', accessor: 'reference', isLink: true, linkPrefix: '/docs/references/' }
+  ]}
+  data={[
+    {
+      acronym: 'MRI',
+      fullName: 'Magnetic Resonance Imaging',
+      description: 'A medical imaging technique used to form pictures of the anatomy and physiological processes of the body',
+      reference: 'mri-basics'
+    },
+    {
+      acronym: 'T1',
+      fullName: 'T1-weighted',
+      description: 'An MRI sequence that highlights fat and shows good anatomical detail',
+      reference: 't1-imaging'
+    },
+    {
+      acronym: 'T2',
+      fullName: 'T2-weighted',
+      description: 'An MRI sequence that highlights water and is useful for detecting pathology',
+      reference: 't2-imaging'
+    },
+    {
+      acronym: 'FLAIR',
+      fullName: 'Fluid Attenuated Inversion Recovery',
+      description: 'A special MRI sequence that suppresses the signal from fluids while maintaining the signal from other tissues',
+      reference: 'flair-imaging'
+    },
+    {
+      acronym: 'DWI',
+      fullName: 'Diffusion Weighted Imaging',
+      description: 'An MRI sequence that measures the random motion of water molecules in tissue',
+      reference: 'dwi-imaging'
+    }
+  ]}
+/> 
